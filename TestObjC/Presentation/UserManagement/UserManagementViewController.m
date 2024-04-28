@@ -11,9 +11,11 @@
 
 @interface UserManagementViewController ()<UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (atomic) Account *selectedAccount;
 @property (nonatomic, strong) UIDatePicker *datePicker;
 @property (nonatomic, strong) NSIndexPath *selectedIndexPath;
+@property (weak, nonatomic) IBOutlet UIButton *editProfile;
 
 @end
 
@@ -102,6 +104,7 @@
     [_birthdate setText:@""];
     [_phoneNumber setText:@""];
     [_address setText:@""];
+    [_editProfile setTitle:@"Save Account" forState:UIControlStateNormal];
 }
 
 - (IBAction)createAnAccount:(id)sender {
@@ -111,6 +114,7 @@
     [_phoneNumber setText:@""];
     [_address setText:@""];
     _selectedAccount = nil;
+    [_editProfile setTitle:@"Save Account" forState:UIControlStateNormal];
 }
 
 - (Account*) buildAccount {
@@ -127,7 +131,10 @@
             [_accountManagement editAccount:[self buildAccount]];
         } else {
             [_accountManagement createNewAccount:[self buildAccount]];
+            [self createAnAccount:sender];
         }
+        
+        UICollectionViewCell *previousCell = [_collectionView cellForItemAtIndexPath:self.selectedIndexPath];
         [_accountCollectionView reloadData];
         
         UIAlertController * alert = [UIAlertController
@@ -141,6 +148,7 @@
                                        }];
            [alert addAction:yesButton];
            [self presentViewController:alert animated:YES completion:nil];
+        previousCell.backgroundColor = [UIColor clearColor];
     } @catch (NSException *exception) {
         NSLog(@"%@", exception.reason);
         UIAlertController * alert = [UIAlertController
@@ -203,6 +211,7 @@
     [_birthdate setText:_selectedAccount.birthDate.value];
     [_phoneNumber setText:_selectedAccount.phoneNumber.value];
     [_address setText:_selectedAccount.address];
+    [_editProfile setTitle:@"Edit Profile" forState:UIControlStateNormal];
 }
 
 

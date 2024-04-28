@@ -347,6 +347,8 @@
                         <outlet property="accountCollectionView" destination="5Gb-g4-Dln" id="yqi-fR-aXu"/>
                         <outlet property="address" destination="fCa-O5-cY9" id="lEE-to-H53"/>
                         <outlet property="birthdate" destination="e74-jH-xkY" id="bef-20-zki"/>
+                        <outlet property="collectionView" destination="5Gb-g4-Dln" id="2k8-5B-imA"/>
+                        <outlet property="editProfile" destination="fuS-P3-Mk7" id="nx9-Nv-lrE"/>
                         <outlet property="email" destination="z9X-yn-pUB" id="YPf-pf-uDp"/>
                         <outlet property="name" destination="mez-mw-qZJ" id="ea0-ni-iI9"/>
                         <outlet property="phoneNumber" destination="nBQ-TX-Lns" id="3kd-7C-okI"/>
