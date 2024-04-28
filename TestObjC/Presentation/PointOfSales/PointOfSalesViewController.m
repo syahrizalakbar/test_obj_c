@@ -210,8 +210,8 @@
                 [_pos addCartVoucher:p.vouchers.firstObject index1:indexPath.row promoType:p.type];
                 break;
         }
-        [_cvCatalog reloadData];
         [_cvOrder reloadData];
+        [_cvCatalog reloadData];
         [self refreshGrandTotal];
     }
 }

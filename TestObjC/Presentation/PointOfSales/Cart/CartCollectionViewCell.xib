@@ -18,7 +18,7 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="d4R-j7-Mpd">
-                        <rect key="frame" x="10" y="0.0" width="456" height="109"/>
+                        <rect key="frame" x="10" y="0.0" width="240" height="109"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4e-77-R3D">
                                 <rect key="frame" x="0.0" y="39.666666666666664" width="30" height="29.999999999999993"/>
@@ -40,7 +40,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="W8Z-oI-wW3">
-                                <rect key="frame" x="43" y="35" width="376" height="39.333333333333343"/>
+                                <rect key="frame" x="43" y="35" width="160" height="39.333333333333343"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfp-nm-q0x">
                                         <rect key="frame" x="0.0" y="0.0" width="37.666666666666664" height="17"/>
@@ -60,7 +60,7 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOb-jR-Klz">
-                                <rect key="frame" x="432" y="42.666666666666664" width="24" height="23.999999999999993"/>
+                                <rect key="frame" x="216" y="42.666666666666664" width="24" height="23.999999999999993"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="7wI-7M-Pwo"/>
                                     <constraint firstAttribute="width" constant="24" id="EUf-NG-APo"/>
@@ -70,13 +70,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="240" id="FVK-R9-mn6"/>
+                        </constraints>
                     </stackView>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
             <constraints>
                 <constraint firstItem="d4R-j7-Mpd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="4Nd-s4-sMY"/>
-                <constraint firstAttribute="trailing" secondItem="d4R-j7-Mpd" secondAttribute="trailing" constant="10" id="DXK-aa-rAZ"/>
+                <constraint firstAttribute="trailing" secondItem="d4R-j7-Mpd" secondAttribute="trailing" priority="999" constant="10" id="DXK-aa-rAZ"/>
                 <constraint firstAttribute="bottom" secondItem="d4R-j7-Mpd" secondAttribute="bottom" id="IUD-ck-bHi"/>
                 <constraint firstItem="d4R-j7-Mpd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="M1f-RE-aTL"/>
             </constraints>

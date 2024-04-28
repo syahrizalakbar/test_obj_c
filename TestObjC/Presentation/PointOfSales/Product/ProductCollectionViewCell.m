@@ -23,7 +23,7 @@
     [_desc setText:desc];
     [_priceLeft setText:priceLeft];
     [_priceRight setText:priceRight];
-    [_qtyTotal.titleLabel setText:qtyTotal];
+    [_qtyTotal setText:qtyTotal];
     if ([qtyTotal  isEqual: @"0"]) {
         [_counter setHidden:true];
     } else {

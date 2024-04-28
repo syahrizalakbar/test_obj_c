@@ -38,16 +38,21 @@
     LineCart *newLine = [[LineCart alloc] init];
     BOOL duplicate = false;
     NSInteger i = 0;
+    LineCart *updatedCart;
     for (LineCart *l in _lineCart) {
         if (l.indexDisplay1 == index1 && l.promoType == promoType) {
             duplicate = true;
             l.qty = l.qty + 1;
-            _lineCart[i] = l;
+            updatedCart = l;
+            break;
         }
         i++;
     }
+    
     if (!duplicate) {
         [_lineCart addObject:[newLine addBogo:productBogo qty:1 index1:index1 promoType:promoType]];
+    } else {
+        _lineCart[i] = updatedCart;
     }
 }
 
@@ -55,16 +60,20 @@
     LineCart *newLine = [[LineCart alloc] init];
     BOOL duplicate = false;
     NSInteger i = 0;
+    LineCart *updatedCart;
     for (LineCart *l in _lineCart) {
         if (l.indexDisplay1 == index1 && l.promoType == promoType) {
             duplicate = true;
             l.qty = l.qty + 1;
-            _lineCart[i] = l;
+            updatedCart = l;
+            break;
         }
         i++;
     }
     if (!duplicate) {
         [_lineCart addObject:[newLine addCombo:productCombo qty:1 index1:index1 promoType:promoType]];
+    } else {
+        _lineCart[i] = updatedCart;
     }
 }
 
@@ -72,16 +81,20 @@
     LineCart *newLine = [[LineCart alloc] init];
     BOOL duplicate = false;
     NSInteger i = 0;
+    LineCart *updatedCart;
     for (LineCart *l in _lineCart) {
         if (l.indexDisplay1 == index1 && l.promoType == promoType) {
             duplicate = true;
             l.qty = l.qty + 1;
-            _lineCart[i] = l;
+            updatedCart = l;
+            break;
         }
         i++;
     }
     if (!duplicate) {
         [_lineCart addObject:[newLine addVoucher:voucher qty:1 index1:index1 promoType:promoType]];
+    } else {
+        _lineCart[i] = updatedCart;
     }
 }
 
