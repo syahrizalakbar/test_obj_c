@@ -1,5 +1,5 @@
 //
-//  TestObjCTests.m
+//  NameTests.m
 //  TestObjCTests
 //
 //  Created by Syahrizal Akbar on 25/04/24.
@@ -7,11 +7,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface TestObjCTests : XCTestCase
+@interface NameTests : XCTestCase
 
 @end
 
-@implementation TestObjCTests
+@implementation NameTests
 
 - (void)setUp {
     // Put setup code here. This method is called before the invocation of each test method in the class.
