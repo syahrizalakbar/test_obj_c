@@ -4,9 +4,10 @@
 //
 //  Created by Syahrizal Akbar on 28/04/24.
 //
+#import "Tag.h"
 
-#ifndef IProductService_h
-#define IProductService_h
+@protocol IProductService
 
+-(NSArray<Tag*>*) getCatalog;
 
-#endif /* IProductService_h */
+@end

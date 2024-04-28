@@ -9,9 +9,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AccountID : NSObject {
-    NSString * _id;
-}
+@interface AccountID : NSObject
+
+@property(nonatomic, readonly) NSString *value;
 
 -(id) initWithValue:(NSString*)value;
 

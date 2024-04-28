@@ -10,6 +10,11 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ItemAccountCollectionViewCell : UICollectionViewCell
+@property (weak, nonatomic) IBOutlet UILabel *phone;
+@property (weak, nonatomic) IBOutlet UILabel *name;
+@property (weak, nonatomic) IBOutlet UIView *mainView;
+
+- (void) setView:(NSString*)name phone:(NSString*)phone;
 
 @end
 

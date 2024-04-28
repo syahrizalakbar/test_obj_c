@@ -5,8 +5,11 @@
 //  Created by Syahrizal Akbar on 28/04/24.
 //
 
-#ifndef IProductRepository_h
-#define IProductRepository_h
+#import "Tag.h"
+
+@protocol IProductRepository
+
+-(NSArray<Tag*>*) getCatalog;
 
 
-#endif /* IProductRepository_h */
+@end

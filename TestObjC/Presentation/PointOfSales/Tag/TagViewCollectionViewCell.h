@@ -10,6 +10,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TagViewCollectionViewCell : UICollectionViewCell
+@property (weak, nonatomic) IBOutlet UILabel *tagName;
+@property (weak, nonatomic) IBOutlet UIView *masterView;
+
+-(void) setTag:(NSString*)tag;
 
 @end
 

@@ -14,14 +14,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Account : AggregateRoot {
-    AccountID *_id;
-    Name *_name;
-    Email *_email;
-    PhoneNumber *_phoneNumber;
-    BirthDate *_birthDate;
-    NSString *_address;
-}
+@interface Account : AggregateRoot
+
+@property(nonatomic, readonly) AccountID *accountId;
+@property(nonatomic, readonly) Name *name;
+@property(nonatomic, readonly) Email *email;
+@property(nonatomic, readonly) PhoneNumber *phoneNumber;
+@property(nonatomic, readonly) BirthDate *birthDate;
+@property(nonatomic, readonly) NSString *address;
 
 -(id) initWithValue:(nullable NSString *)accountId withName:(NSString *)name withEmail:(NSString *)email withPhone:(NSString *)phoneNumber withBirthDate:(NSString *)birthDate withAddress:(nullable NSString *)address;
 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "main:main.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[UserManagementViewController onEditSave:]:UserManagementViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[UserManagementViewController buildAccount]:UserManagementViewController.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

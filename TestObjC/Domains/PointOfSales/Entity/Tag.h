@@ -6,10 +6,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Promotion.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Tag : NSObject
+
+@property(nonatomic) NSString *name;
+@property(nonatomic) NSMutableArray<Promotion*> *promotions;
+
+-(NSInteger) totalAllDisplay;
+
+-(NSArray<Promotion*>*) serialDisplay;
 
 @end
 

@@ -51,7 +51,7 @@ static NSInteger _maximumYearsOld = 100;
     if (isTooOld) {
         @throw [NSException exceptionWithName:@"BirthDateException" reason:@"BirthDate is Too Old" userInfo:nil];
     }
-    
+    _value = value;
     return self;
 }
 

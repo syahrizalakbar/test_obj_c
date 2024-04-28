@@ -11,7 +11,15 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+    
+    [self.layer setBorderWidth:1];
+    [self.layer setCornerRadius:10];
+    [self.layer setBorderColor:[UIColor grayColor].CGColor];
+}
+
+- (void)setView:(nonnull NSString *)name phone:(nonnull NSString *)phone {
+    [_name setText:name];
+    [_phone setText:phone];
 }
 
 @end

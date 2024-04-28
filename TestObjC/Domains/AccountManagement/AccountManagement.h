@@ -12,7 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface AccountManagement : NSObject {
-    IAccountService *_accountService;
+    id<IAccountService> _accountService;
 }
 
 @property(nonatomic, copy, readonly) NSMutableArray<Account*> *accounts;

@@ -6,10 +6,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "IProductRepository.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ProductRepository : NSObject
+@interface ProductRepository : NSObject<IProductRepository>
 
 @end
 

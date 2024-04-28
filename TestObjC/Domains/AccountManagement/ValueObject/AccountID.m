@@ -11,13 +11,13 @@
 @implementation AccountID
     
 -(id) init {
-    _id = [Generator generateUUID];
+    _value = [Generator generateUUID];
     
     return self;
 }
 
 - (id)initWithValue:(NSString *)value {
-    _id = value;
+    _value = value;
     
     return self;
 }

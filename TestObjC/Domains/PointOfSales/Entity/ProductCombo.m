@@ -9,4 +9,13 @@
 
 @implementation ProductCombo
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _products = [[NSMutableArray alloc] init];
+    }
+    return self;
+}
+
 @end

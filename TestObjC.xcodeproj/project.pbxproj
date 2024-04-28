@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AFD004E0C08A763EFC75F8F /* Pods_TestObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B5C2FBEBFF2FB050757B435 /* Pods_TestObjC.framework */; };
+		3A895EEC76328A424DDD16E1 /* Pods_TestObjC_TestObjCUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF0AA569BDDD0FFDB481DF3 /* Pods_TestObjC_TestObjCUITests.framework */; };
+		5406A3E72BDD3A3700EB9A26 /* AccountService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5406A3E62BDD3A3700EB9A26 /* AccountService.m */; };
+		5406A3EA2BDD3A9000EB9A26 /* AccountRepositoryRealm.m in Sources */ = {isa = PBXBuildFile; fileRef = 5406A3E92BDD3A9000EB9A26 /* AccountRepositoryRealm.m */; };
+		5406A3F22BDD5E0600EB9A26 /* PointOfSales.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5406A3F12BDD5E0600EB9A26 /* PointOfSales.storyboard */; };
+		5406A3F52BDD5E1C00EB9A26 /* PointOfSalesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5406A3F42BDD5E1C00EB9A26 /* PointOfSalesViewController.m */; };
 		540B5E4F2BDA5623003D98B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 540B5E4E2BDA5623003D98B3 /* AppDelegate.m */; };
 		540B5E522BDA5623003D98B3 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 540B5E512BDA5623003D98B3 /* SceneDelegate.m */; };
 		540B5E552BDA5623003D98B3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 540B5E542BDA5623003D98B3 /* ViewController.m */; };
@@ -14,9 +20,45 @@
 		540B5E5A2BDA5625003D98B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 540B5E592BDA5625003D98B3 /* Assets.xcassets */; };
 		540B5E5D2BDA5625003D98B3 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 540B5E5C2BDA5625003D98B3 /* Base */; };
 		540B5E602BDA5625003D98B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 540B5E5F2BDA5625003D98B3 /* main.m */; };
-		540B5E6A2BDA5625003D98B3 /* TestObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 540B5E692BDA5625003D98B3 /* TestObjCTests.m */; };
 		540B5E742BDA5625003D98B3 /* TestObjCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 540B5E732BDA5625003D98B3 /* TestObjCUITests.m */; };
 		540B5E762BDA5625003D98B3 /* TestObjCUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 540B5E752BDA5625003D98B3 /* TestObjCUITestsLaunchTests.m */; };
+		540B5E922BDA5C34003D98B3 /* AggregateRoot.m in Sources */ = {isa = PBXBuildFile; fileRef = 540B5E912BDA5C34003D98B3 /* AggregateRoot.m */; };
+		540B5E962BDA5C9C003D98B3 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 540B5E952BDA5C9C003D98B3 /* Account.m */; };
+		540B5E9B2BDA5E64003D98B3 /* AccountID.m in Sources */ = {isa = PBXBuildFile; fileRef = 540B5E9A2BDA5E64003D98B3 /* AccountID.m */; };
+		540B5E9C2BDA5E64003D98B3 /* AccountID.m in Sources */ = {isa = PBXBuildFile; fileRef = 540B5E9A2BDA5E64003D98B3 /* AccountID.m */; };
+		540B5EA02BDA7223003D98B3 /* Generator.m in Sources */ = {isa = PBXBuildFile; fileRef = 540B5E9F2BDA7223003D98B3 /* Generator.m */; };
+		540B5EA12BDA7223003D98B3 /* Generator.m in Sources */ = {isa = PBXBuildFile; fileRef = 540B5E9F2BDA7223003D98B3 /* Generator.m */; };
+		540B5EA62BDA740F003D98B3 /* GeneratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 540B5EA52BDA740F003D98B3 /* GeneratorTests.m */; };
+		540B5EAB2BDA7EB2003D98B3 /* Name.m in Sources */ = {isa = PBXBuildFile; fileRef = 540B5EAA2BDA7EB2003D98B3 /* Name.m */; };
+		540B5EB02BDA82DD003D98B3 /* NameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 540B5EAF2BDA82DD003D98B3 /* NameTests.m */; };
+		540B5EB32BDA9179003D98B3 /* Email.m in Sources */ = {isa = PBXBuildFile; fileRef = 540B5EB22BDA9179003D98B3 /* Email.m */; };
+		540B5EB52BDA9189003D98B3 /* EmailTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 540B5EB42BDA9189003D98B3 /* EmailTests.m */; };
+		540B5EB82BDA9724003D98B3 /* PhoneNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 540B5EB72BDA9724003D98B3 /* PhoneNumber.m */; };
+		540B5EBB2BDA97A5003D98B3 /* PhoneNumberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 540B5EBA2BDA97A5003D98B3 /* PhoneNumberTests.m */; };
+		540B5EBE2BDA9E9A003D98B3 /* BirthDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 540B5EBD2BDA9E9A003D98B3 /* BirthDate.m */; };
+		540B5EC02BDA9EF5003D98B3 /* BirthDateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 540B5EBF2BDA9EF5003D98B3 /* BirthDateTests.m */; };
+		540B5EC52BDB79BC003D98B3 /* AccountManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = 540B5EC42BDB79BC003D98B3 /* AccountManagement.m */; };
+		5431A1392BDCE461002F4758 /* UserManagement.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5431A1382BDCE461002F4758 /* UserManagement.storyboard */; };
+		5431A13C2BDCE4EB002F4758 /* UserManagementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5431A13B2BDCE4EB002F4758 /* UserManagementViewController.m */; };
+		5431A1462BDCF921002F4758 /* ItemAccountCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5431A1452BDCF921002F4758 /* ItemAccountCollectionViewCell.xib */; };
+		5431A1472BDCF921002F4758 /* ItemAccountCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5431A1442BDCF921002F4758 /* ItemAccountCollectionViewCell.m */; };
+		548C667D2BDD620200119997 /* PointOfSales.m in Sources */ = {isa = PBXBuildFile; fileRef = 548C667C2BDD620200119997 /* PointOfSales.m */; };
+		548C668B2BDD69AC00119997 /* TagViewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 548C668A2BDD69AC00119997 /* TagViewCollectionViewCell.xib */; };
+		548C668C2BDD69AC00119997 /* TagViewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 548C66892BDD69AC00119997 /* TagViewCollectionViewCell.m */; };
+		548C66912BDD6AB900119997 /* ProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 548C66902BDD6AB900119997 /* ProductCollectionViewCell.xib */; };
+		548C66922BDD6AB900119997 /* ProductCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 548C668F2BDD6AB900119997 /* ProductCollectionViewCell.m */; };
+		548C66972BDD6E0500119997 /* CartCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 548C66962BDD6E0500119997 /* CartCollectionViewCell.xib */; };
+		548C66982BDD6E0500119997 /* CartCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 548C66952BDD6E0500119997 /* CartCollectionViewCell.m */; };
+		548C669F2BDD78BB00119997 /* ProductService.m in Sources */ = {isa = PBXBuildFile; fileRef = 548C669E2BDD78BA00119997 /* ProductService.m */; };
+		548C66A52BDD79EE00119997 /* ProductRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 548C66A42BDD79EE00119997 /* ProductRepository.m */; };
+		549CEA8F2BDCA7A000056517 /* Promotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 549CEA8E2BDCA7A000056517 /* Promotion.m */; };
+		549CEA922BDCA9E800056517 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 549CEA912BDCA9E800056517 /* Product.m */; };
+		549CEA982BDCB30900056517 /* ProductCombo.m in Sources */ = {isa = PBXBuildFile; fileRef = 549CEA972BDCB30900056517 /* ProductCombo.m */; };
+		549CEA9B2BDCB31500056517 /* ProductBOGO.m in Sources */ = {isa = PBXBuildFile; fileRef = 549CEA9A2BDCB31500056517 /* ProductBOGO.m */; };
+		549CEA9E2BDCB3A300056517 /* Voucher.m in Sources */ = {isa = PBXBuildFile; fileRef = 549CEA9D2BDCB3A300056517 /* Voucher.m */; };
+		549CEAA12BDCB45900056517 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 549CEAA02BDCB45900056517 /* Tag.m */; };
+		549CEAA42BDCC75100056517 /* LineCart.m in Sources */ = {isa = PBXBuildFile; fileRef = 549CEAA32BDCC75100056517 /* LineCart.m */; };
+		88962D80EDD5D362476CF67D /* Pods_TestObjCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44088D9EB706BD4FD4EB84B8 /* Pods_TestObjCTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +79,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11FD64A32A28729B752357FF /* Pods-TestObjC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestObjC.release.xcconfig"; path = "Target Support Files/Pods-TestObjC/Pods-TestObjC.release.xcconfig"; sourceTree = "<group>"; };
+		3E512BC1C3A1EC1B7E196894 /* Pods-TestObjC-TestObjCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestObjC-TestObjCUITests.debug.xcconfig"; path = "Target Support Files/Pods-TestObjC-TestObjCUITests/Pods-TestObjC-TestObjCUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		44088D9EB706BD4FD4EB84B8 /* Pods_TestObjCTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestObjCTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FF0AA569BDDD0FFDB481DF3 /* Pods_TestObjC_TestObjCUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestObjC_TestObjCUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5406A3E52BDD3A3700EB9A26 /* AccountService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountService.h; sourceTree = "<group>"; };
+		5406A3E62BDD3A3700EB9A26 /* AccountService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountService.m; sourceTree = "<group>"; };
+		5406A3E82BDD3A9000EB9A26 /* AccountRepositoryRealm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountRepositoryRealm.h; sourceTree = "<group>"; };
+		5406A3E92BDD3A9000EB9A26 /* AccountRepositoryRealm.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountRepositoryRealm.m; sourceTree = "<group>"; };
+		5406A3EB2BDD3AB400EB9A26 /* IAccountRepository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IAccountRepository.h; sourceTree = "<group>"; };
+		5406A3EE2BDD3C6D00EB9A26 /* AccountRealm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountRealm.h; sourceTree = "<group>"; };
+		5406A3F12BDD5E0600EB9A26 /* PointOfSales.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PointOfSales.storyboard; sourceTree = "<group>"; };
+		5406A3F32BDD5E1C00EB9A26 /* PointOfSalesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointOfSalesViewController.h; sourceTree = "<group>"; };
+		5406A3F42BDD5E1C00EB9A26 /* PointOfSalesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PointOfSalesViewController.m; sourceTree = "<group>"; };
 		540B5E4A2BDA5623003D98B3 /* TestObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		540B5E4D2BDA5623003D98B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		540B5E4E2BDA5623003D98B3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -50,10 +105,78 @@
 		540B5E5E2BDA5625003D98B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		540B5E5F2BDA5625003D98B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		540B5E652BDA5625003D98B3 /* TestObjCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestObjCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		540B5E692BDA5625003D98B3 /* TestObjCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObjCTests.m; sourceTree = "<group>"; };
 		540B5E6F2BDA5625003D98B3 /* TestObjCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestObjCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		540B5E732BDA5625003D98B3 /* TestObjCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObjCUITests.m; sourceTree = "<group>"; };
 		540B5E752BDA5625003D98B3 /* TestObjCUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObjCUITestsLaunchTests.m; sourceTree = "<group>"; };
+		540B5E902BDA5C34003D98B3 /* AggregateRoot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AggregateRoot.h; sourceTree = "<group>"; };
+		540B5E912BDA5C34003D98B3 /* AggregateRoot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AggregateRoot.m; sourceTree = "<group>"; };
+		540B5E942BDA5C9C003D98B3 /* Account.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		540B5E952BDA5C9C003D98B3 /* Account.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
+		540B5E992BDA5E64003D98B3 /* AccountID.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountID.h; sourceTree = "<group>"; };
+		540B5E9A2BDA5E64003D98B3 /* AccountID.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountID.m; sourceTree = "<group>"; };
+		540B5E9E2BDA7223003D98B3 /* Generator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Generator.h; sourceTree = "<group>"; };
+		540B5E9F2BDA7223003D98B3 /* Generator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Generator.m; sourceTree = "<group>"; };
+		540B5EA52BDA740F003D98B3 /* GeneratorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratorTests.m; sourceTree = "<group>"; };
+		540B5EA92BDA7EB2003D98B3 /* Name.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Name.h; sourceTree = "<group>"; };
+		540B5EAA2BDA7EB2003D98B3 /* Name.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Name.m; sourceTree = "<group>"; };
+		540B5EAF2BDA82DD003D98B3 /* NameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NameTests.m; sourceTree = "<group>"; };
+		540B5EB12BDA9179003D98B3 /* Email.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Email.h; sourceTree = "<group>"; };
+		540B5EB22BDA9179003D98B3 /* Email.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Email.m; sourceTree = "<group>"; };
+		540B5EB42BDA9189003D98B3 /* EmailTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmailTests.m; sourceTree = "<group>"; };
+		540B5EB62BDA9724003D98B3 /* PhoneNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhoneNumber.h; sourceTree = "<group>"; };
+		540B5EB72BDA9724003D98B3 /* PhoneNumber.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhoneNumber.m; sourceTree = "<group>"; };
+		540B5EBA2BDA97A5003D98B3 /* PhoneNumberTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhoneNumberTests.m; sourceTree = "<group>"; };
+		540B5EBC2BDA9E9A003D98B3 /* BirthDate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BirthDate.h; sourceTree = "<group>"; };
+		540B5EBD2BDA9E9A003D98B3 /* BirthDate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BirthDate.m; sourceTree = "<group>"; };
+		540B5EBF2BDA9EF5003D98B3 /* BirthDateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BirthDateTests.m; sourceTree = "<group>"; };
+		540B5EC12BDABC88003D98B3 /* TestObjC.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestObjC.xctestplan; sourceTree = "<group>"; };
+		540B5EC32BDB79BC003D98B3 /* AccountManagement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountManagement.h; sourceTree = "<group>"; };
+		540B5EC42BDB79BC003D98B3 /* AccountManagement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountManagement.m; sourceTree = "<group>"; };
+		540B5EC72BDB7D34003D98B3 /* IAccountService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IAccountService.h; sourceTree = "<group>"; };
+		5431A1382BDCE461002F4758 /* UserManagement.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserManagement.storyboard; sourceTree = "<group>"; };
+		5431A13A2BDCE4EB002F4758 /* UserManagementViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserManagementViewController.h; sourceTree = "<group>"; };
+		5431A13B2BDCE4EB002F4758 /* UserManagementViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserManagementViewController.m; sourceTree = "<group>"; };
+		5431A1432BDCF921002F4758 /* ItemAccountCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemAccountCollectionViewCell.h; sourceTree = "<group>"; };
+		5431A1442BDCF921002F4758 /* ItemAccountCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemAccountCollectionViewCell.m; sourceTree = "<group>"; };
+		5431A1452BDCF921002F4758 /* ItemAccountCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemAccountCollectionViewCell.xib; sourceTree = "<group>"; };
+		548C667B2BDD620200119997 /* PointOfSales.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointOfSales.h; sourceTree = "<group>"; };
+		548C667C2BDD620200119997 /* PointOfSales.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PointOfSales.m; sourceTree = "<group>"; };
+		548C66882BDD69AC00119997 /* TagViewCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TagViewCollectionViewCell.h; sourceTree = "<group>"; };
+		548C66892BDD69AC00119997 /* TagViewCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TagViewCollectionViewCell.m; sourceTree = "<group>"; };
+		548C668A2BDD69AC00119997 /* TagViewCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagViewCollectionViewCell.xib; sourceTree = "<group>"; };
+		548C668E2BDD6AB900119997 /* ProductCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductCollectionViewCell.h; sourceTree = "<group>"; };
+		548C668F2BDD6AB900119997 /* ProductCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductCollectionViewCell.m; sourceTree = "<group>"; };
+		548C66902BDD6AB900119997 /* ProductCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCollectionViewCell.xib; sourceTree = "<group>"; };
+		548C66942BDD6E0500119997 /* CartCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CartCollectionViewCell.h; sourceTree = "<group>"; };
+		548C66952BDD6E0500119997 /* CartCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CartCollectionViewCell.m; sourceTree = "<group>"; };
+		548C66962BDD6E0500119997 /* CartCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartCollectionViewCell.xib; sourceTree = "<group>"; };
+		548C669A2BDD713900119997 /* IProductService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IProductService.h; sourceTree = "<group>"; };
+		548C669D2BDD78BA00119997 /* ProductService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductService.h; sourceTree = "<group>"; };
+		548C669E2BDD78BA00119997 /* ProductService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductService.m; sourceTree = "<group>"; };
+		548C66A12BDD78F900119997 /* IProductRepository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IProductRepository.h; sourceTree = "<group>"; };
+		548C66A32BDD79EE00119997 /* ProductRepository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductRepository.h; sourceTree = "<group>"; };
+		548C66A42BDD79EE00119997 /* ProductRepository.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductRepository.m; sourceTree = "<group>"; };
+		548C66A72BDD7C3400119997 /* ApiResPromotion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiResPromotion.h; sourceTree = "<group>"; };
+		549CEA8D2BDCA7A000056517 /* Promotion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Promotion.h; sourceTree = "<group>"; };
+		549CEA8E2BDCA7A000056517 /* Promotion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Promotion.m; sourceTree = "<group>"; };
+		549CEA902BDCA9E800056517 /* Product.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		549CEA912BDCA9E800056517 /* Product.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		549CEA962BDCB30900056517 /* ProductCombo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductCombo.h; sourceTree = "<group>"; };
+		549CEA972BDCB30900056517 /* ProductCombo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductCombo.m; sourceTree = "<group>"; };
+		549CEA992BDCB31500056517 /* ProductBOGO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductBOGO.h; sourceTree = "<group>"; };
+		549CEA9A2BDCB31500056517 /* ProductBOGO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductBOGO.m; sourceTree = "<group>"; };
+		549CEA9C2BDCB3A300056517 /* Voucher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Voucher.h; sourceTree = "<group>"; };
+		549CEA9D2BDCB3A300056517 /* Voucher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Voucher.m; sourceTree = "<group>"; };
+		549CEA9F2BDCB45900056517 /* Tag.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
+		549CEAA02BDCB45900056517 /* Tag.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
+		549CEAA22BDCC75100056517 /* LineCart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LineCart.h; sourceTree = "<group>"; };
+		549CEAA32BDCC75100056517 /* LineCart.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LineCart.m; sourceTree = "<group>"; };
+		549CEAA62BDCCD2A00056517 /* PromoType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PromoType.h; sourceTree = "<group>"; };
+		7B5C2FBEBFF2FB050757B435 /* Pods_TestObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6A4F489DF4974EF1659F253 /* Pods-TestObjC-TestObjCUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestObjC-TestObjCUITests.release.xcconfig"; path = "Target Support Files/Pods-TestObjC-TestObjCUITests/Pods-TestObjC-TestObjCUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B78A2DC03A2B2E11D84E5149 /* Pods-TestObjCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestObjCTests.debug.xcconfig"; path = "Target Support Files/Pods-TestObjCTests/Pods-TestObjCTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DF78F9780B93BB1B2B3FAC3B /* Pods-TestObjC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestObjC.debug.xcconfig"; path = "Target Support Files/Pods-TestObjC/Pods-TestObjC.debug.xcconfig"; sourceTree = "<group>"; };
+		F73B486D154605949D496F0E /* Pods-TestObjCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestObjCTests.release.xcconfig"; path = "Target Support Files/Pods-TestObjCTests/Pods-TestObjCTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +184,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AFD004E0C08A763EFC75F8F /* Pods_TestObjC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +192,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88962D80EDD5D362476CF67D /* Pods_TestObjCTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,19 +200,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A895EEC76328A424DDD16E1 /* Pods_TestObjC_TestObjCUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B2C4DF397E0FF0823456873 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B5C2FBEBFF2FB050757B435 /* Pods_TestObjC.framework */,
+				4FF0AA569BDDD0FFDB481DF3 /* Pods_TestObjC_TestObjCUITests.framework */,
+				44088D9EB706BD4FD4EB84B8 /* Pods_TestObjCTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5406A3EC2BDD3BDE00EB9A26 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				5406A3EE2BDD3C6D00EB9A26 /* AccountRealm.h */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 		540B5E412BDA5622003D98B3 = {
 			isa = PBXGroup;
 			children = (
+				540B5EC12BDABC88003D98B3 /* TestObjC.xctestplan */,
 				540B5E4C2BDA5623003D98B3 /* TestObjC */,
 				540B5E682BDA5625003D98B3 /* TestObjCTests */,
 				540B5E722BDA5625003D98B3 /* TestObjCUITests */,
 				540B5E4B2BDA5623003D98B3 /* Products */,
+				5C1EFD0173124EF0D5F3915D /* Pods */,
+				2B2C4DF397E0FF0823456873 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +251,11 @@
 		540B5E4C2BDA5623003D98B3 /* TestObjC */ = {
 			isa = PBXGroup;
 			children = (
+				540B5E9D2BDA7213003D98B3 /* Utils */,
+				54EAD6E72BDD308C003DCF9A /* Repositories */,
+				54EAD6E02BDD2D56003DCF9A /* Services */,
+				540B5E822BDA5636003D98B3 /* Domains */,
+				549CEAA72BDCD00900056517 /* Presentation */,
 				540B5E4D2BDA5623003D98B3 /* AppDelegate.h */,
 				540B5E4E2BDA5623003D98B3 /* AppDelegate.m */,
 				540B5E502BDA5623003D98B3 /* SceneDelegate.h */,
@@ -122,7 +274,8 @@
 		540B5E682BDA5625003D98B3 /* TestObjCTests */ = {
 			isa = PBXGroup;
 			children = (
-				540B5E692BDA5625003D98B3 /* TestObjCTests.m */,
+				540B5EAC2BDA82B0003D98B3 /* Domains */,
+				540B5EA22BDA72E9003D98B3 /* Utils */,
 			);
 			path = TestObjCTests;
 			sourceTree = "<group>";
@@ -136,6 +289,332 @@
 			path = TestObjCUITests;
 			sourceTree = "<group>";
 		};
+		540B5E822BDA5636003D98B3 /* Domains */ = {
+			isa = PBXGroup;
+			children = (
+				540B5E872BDA5929003D98B3 /* _Common */,
+				549CEA822BDBFB4000056517 /* PointOfSales */,
+				540B5E832BDA565B003D98B3 /* AccountManagement */,
+			);
+			path = Domains;
+			sourceTree = "<group>";
+		};
+		540B5E832BDA565B003D98B3 /* AccountManagement */ = {
+			isa = PBXGroup;
+			children = (
+				540B5EC62BDB7D08003D98B3 /* Protocol */,
+				540B5EC22BDB14C2003D98B3 /* Entity */,
+				540B5E982BDA5E46003D98B3 /* ValueObject */,
+				540B5EC32BDB79BC003D98B3 /* AccountManagement.h */,
+				540B5EC42BDB79BC003D98B3 /* AccountManagement.m */,
+			);
+			path = AccountManagement;
+			sourceTree = "<group>";
+		};
+		540B5E872BDA5929003D98B3 /* _Common */ = {
+			isa = PBXGroup;
+			children = (
+				540B5E902BDA5C34003D98B3 /* AggregateRoot.h */,
+				540B5E912BDA5C34003D98B3 /* AggregateRoot.m */,
+			);
+			path = _Common;
+			sourceTree = "<group>";
+		};
+		540B5E982BDA5E46003D98B3 /* ValueObject */ = {
+			isa = PBXGroup;
+			children = (
+				540B5E992BDA5E64003D98B3 /* AccountID.h */,
+				540B5E9A2BDA5E64003D98B3 /* AccountID.m */,
+				540B5EA92BDA7EB2003D98B3 /* Name.h */,
+				540B5EAA2BDA7EB2003D98B3 /* Name.m */,
+				540B5EB12BDA9179003D98B3 /* Email.h */,
+				540B5EB22BDA9179003D98B3 /* Email.m */,
+				540B5EB62BDA9724003D98B3 /* PhoneNumber.h */,
+				540B5EB72BDA9724003D98B3 /* PhoneNumber.m */,
+				540B5EBC2BDA9E9A003D98B3 /* BirthDate.h */,
+				540B5EBD2BDA9E9A003D98B3 /* BirthDate.m */,
+			);
+			path = ValueObject;
+			sourceTree = "<group>";
+		};
+		540B5E9D2BDA7213003D98B3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				540B5E9E2BDA7223003D98B3 /* Generator.h */,
+				540B5E9F2BDA7223003D98B3 /* Generator.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		540B5EA22BDA72E9003D98B3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				540B5EA52BDA740F003D98B3 /* GeneratorTests.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		540B5EAC2BDA82B0003D98B3 /* Domains */ = {
+			isa = PBXGroup;
+			children = (
+				540B5EAD2BDA82B7003D98B3 /* Account */,
+			);
+			path = Domains;
+			sourceTree = "<group>";
+		};
+		540B5EAD2BDA82B7003D98B3 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				540B5EAE2BDA82BD003D98B3 /* ValueObject */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		540B5EAE2BDA82BD003D98B3 /* ValueObject */ = {
+			isa = PBXGroup;
+			children = (
+				540B5EAF2BDA82DD003D98B3 /* NameTests.m */,
+				540B5EB42BDA9189003D98B3 /* EmailTests.m */,
+				540B5EBA2BDA97A5003D98B3 /* PhoneNumberTests.m */,
+				540B5EBF2BDA9EF5003D98B3 /* BirthDateTests.m */,
+			);
+			path = ValueObject;
+			sourceTree = "<group>";
+		};
+		540B5EC22BDB14C2003D98B3 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				540B5E942BDA5C9C003D98B3 /* Account.h */,
+				540B5E952BDA5C9C003D98B3 /* Account.m */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		540B5EC62BDB7D08003D98B3 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				540B5EC72BDB7D34003D98B3 /* IAccountService.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		5431A1422BDCF885002F4758 /* ItemAccount */ = {
+			isa = PBXGroup;
+			children = (
+				5431A1432BDCF921002F4758 /* ItemAccountCollectionViewCell.h */,
+				5431A1442BDCF921002F4758 /* ItemAccountCollectionViewCell.m */,
+				5431A1452BDCF921002F4758 /* ItemAccountCollectionViewCell.xib */,
+			);
+			path = ItemAccount;
+			sourceTree = "<group>";
+		};
+		548C667A2BDD61E700119997 /* PointOfSales */ = {
+			isa = PBXGroup;
+			children = (
+				548C66932BDD6DF800119997 /* Cart */,
+				548C668D2BDD6AA900119997 /* Product */,
+				548C66872BDD698E00119997 /* Tag */,
+				5406A3F12BDD5E0600EB9A26 /* PointOfSales.storyboard */,
+				5406A3F32BDD5E1C00EB9A26 /* PointOfSalesViewController.h */,
+				5406A3F42BDD5E1C00EB9A26 /* PointOfSalesViewController.m */,
+			);
+			path = PointOfSales;
+			sourceTree = "<group>";
+		};
+		548C66872BDD698E00119997 /* Tag */ = {
+			isa = PBXGroup;
+			children = (
+				548C66882BDD69AC00119997 /* TagViewCollectionViewCell.h */,
+				548C66892BDD69AC00119997 /* TagViewCollectionViewCell.m */,
+				548C668A2BDD69AC00119997 /* TagViewCollectionViewCell.xib */,
+			);
+			path = Tag;
+			sourceTree = "<group>";
+		};
+		548C668D2BDD6AA900119997 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				548C668E2BDD6AB900119997 /* ProductCollectionViewCell.h */,
+				548C668F2BDD6AB900119997 /* ProductCollectionViewCell.m */,
+				548C66902BDD6AB900119997 /* ProductCollectionViewCell.xib */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		548C66932BDD6DF800119997 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				548C66942BDD6E0500119997 /* CartCollectionViewCell.h */,
+				548C66952BDD6E0500119997 /* CartCollectionViewCell.m */,
+				548C66962BDD6E0500119997 /* CartCollectionViewCell.xib */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		548C66992BDD712600119997 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				548C669A2BDD713900119997 /* IProductService.h */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		548C669C2BDD78A700119997 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				548C66A02BDD78E800119997 /* Interface */,
+				548C669D2BDD78BA00119997 /* ProductService.h */,
+				548C669E2BDD78BA00119997 /* ProductService.m */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		548C66A02BDD78E800119997 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				548C66A12BDD78F900119997 /* IProductRepository.h */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		548C66A22BDD79DD00119997 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				548C66A62BDD7C2400119997 /* Model */,
+				548C66A32BDD79EE00119997 /* ProductRepository.h */,
+				548C66A42BDD79EE00119997 /* ProductRepository.m */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		548C66A62BDD7C2400119997 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				548C66A72BDD7C3400119997 /* ApiResPromotion.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		549CEA822BDBFB4000056517 /* PointOfSales */ = {
+			isa = PBXGroup;
+			children = (
+				548C66992BDD712600119997 /* Interface */,
+				549CEAA52BDCCCFF00056517 /* Enum */,
+				549CEA862BDCA55000056517 /* Entity */,
+				548C667B2BDD620200119997 /* PointOfSales.h */,
+				548C667C2BDD620200119997 /* PointOfSales.m */,
+			);
+			path = PointOfSales;
+			sourceTree = "<group>";
+		};
+		549CEA862BDCA55000056517 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				549CEA9F2BDCB45900056517 /* Tag.h */,
+				549CEAA02BDCB45900056517 /* Tag.m */,
+				549CEA8D2BDCA7A000056517 /* Promotion.h */,
+				549CEA8E2BDCA7A000056517 /* Promotion.m */,
+				549CEA902BDCA9E800056517 /* Product.h */,
+				549CEA912BDCA9E800056517 /* Product.m */,
+				549CEA962BDCB30900056517 /* ProductCombo.h */,
+				549CEA972BDCB30900056517 /* ProductCombo.m */,
+				549CEA992BDCB31500056517 /* ProductBOGO.h */,
+				549CEA9A2BDCB31500056517 /* ProductBOGO.m */,
+				549CEA9C2BDCB3A300056517 /* Voucher.h */,
+				549CEA9D2BDCB3A300056517 /* Voucher.m */,
+				549CEAA22BDCC75100056517 /* LineCart.h */,
+				549CEAA32BDCC75100056517 /* LineCart.m */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		549CEAA52BDCCCFF00056517 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				549CEAA62BDCCD2A00056517 /* PromoType.h */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		549CEAA72BDCD00900056517 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				548C667A2BDD61E700119997 /* PointOfSales */,
+				549CEAA82BDCD00F00056517 /* UserManagement */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		549CEAA82BDCD00F00056517 /* UserManagement */ = {
+			isa = PBXGroup;
+			children = (
+				5431A1422BDCF885002F4758 /* ItemAccount */,
+				5431A1382BDCE461002F4758 /* UserManagement.storyboard */,
+				5431A13A2BDCE4EB002F4758 /* UserManagementViewController.h */,
+				5431A13B2BDCE4EB002F4758 /* UserManagementViewController.m */,
+			);
+			path = UserManagement;
+			sourceTree = "<group>";
+		};
+		54EAD6E02BDD2D56003DCF9A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				548C669C2BDD78A700119997 /* Product */,
+				54EAD6E12BDD2D6D003DCF9A /* Account */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		54EAD6E12BDD2D6D003DCF9A /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				54EAD6E22BDD2D76003DCF9A /* Protocol */,
+				5406A3E52BDD3A3700EB9A26 /* AccountService.h */,
+				5406A3E62BDD3A3700EB9A26 /* AccountService.m */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		54EAD6E22BDD2D76003DCF9A /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				5406A3EB2BDD3AB400EB9A26 /* IAccountRepository.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		54EAD6E72BDD308C003DCF9A /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				548C66A22BDD79DD00119997 /* Product */,
+				54EAD6E82BDD30A3003DCF9A /* Account */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		54EAD6E82BDD30A3003DCF9A /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				5406A3EC2BDD3BDE00EB9A26 /* Entity */,
+				5406A3E82BDD3A9000EB9A26 /* AccountRepositoryRealm.h */,
+				5406A3E92BDD3A9000EB9A26 /* AccountRepositoryRealm.m */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		5C1EFD0173124EF0D5F3915D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF78F9780B93BB1B2B3FAC3B /* Pods-TestObjC.debug.xcconfig */,
+				11FD64A32A28729B752357FF /* Pods-TestObjC.release.xcconfig */,
+				3E512BC1C3A1EC1B7E196894 /* Pods-TestObjC-TestObjCUITests.debug.xcconfig */,
+				B6A4F489DF4974EF1659F253 /* Pods-TestObjC-TestObjCUITests.release.xcconfig */,
+				B78A2DC03A2B2E11D84E5149 /* Pods-TestObjCTests.debug.xcconfig */,
+				F73B486D154605949D496F0E /* Pods-TestObjCTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +622,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 540B5E792BDA5625003D98B3 /* Build configuration list for PBXNativeTarget "TestObjC" */;
 			buildPhases = (
+				9AFA83E04A75F0E12A58EA06 /* [CP] Check Pods Manifest.lock */,
 				540B5E462BDA5623003D98B3 /* Sources */,
 				540B5E472BDA5623003D98B3 /* Frameworks */,
 				540B5E482BDA5623003D98B3 /* Resources */,
+				C8E8CB61F882C0E8C937D158 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +641,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 540B5E7C2BDA5625003D98B3 /* Build configuration list for PBXNativeTarget "TestObjCTests" */;
 			buildPhases = (
+				B08FF3E50F6E7930CF6DA0EB /* [CP] Check Pods Manifest.lock */,
 				540B5E612BDA5625003D98B3 /* Sources */,
 				540B5E622BDA5625003D98B3 /* Frameworks */,
 				540B5E632BDA5625003D98B3 /* Resources */,
@@ -178,9 +660,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 540B5E7F2BDA5625003D98B3 /* Build configuration list for PBXNativeTarget "TestObjCUITests" */;
 			buildPhases = (
+				D2A98F94F89746F7813CE8FC /* [CP] Check Pods Manifest.lock */,
 				540B5E6B2BDA5625003D98B3 /* Sources */,
 				540B5E6C2BDA5625003D98B3 /* Frameworks */,
 				540B5E6D2BDA5625003D98B3 /* Resources */,
+				C158BE85565E2D00B84C0C66 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -239,8 +723,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5431A1392BDCE461002F4758 /* UserManagement.storyboard in Resources */,
 				540B5E5A2BDA5625003D98B3 /* Assets.xcassets in Resources */,
+				548C668B2BDD69AC00119997 /* TagViewCollectionViewCell.xib in Resources */,
+				548C66972BDD6E0500119997 /* CartCollectionViewCell.xib in Resources */,
 				540B5E5D2BDA5625003D98B3 /* Base in Resources */,
+				5406A3F22BDD5E0600EB9A26 /* PointOfSales.storyboard in Resources */,
+				5431A1462BDCF921002F4758 /* ItemAccountCollectionViewCell.xib in Resources */,
+				548C66912BDD6AB900119997 /* ProductCollectionViewCell.xib in Resources */,
 				540B5E582BDA5623003D98B3 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,15 +751,145 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9AFA83E04A75F0E12A58EA06 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestObjC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B08FF3E50F6E7930CF6DA0EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestObjCTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C158BE85565E2D00B84C0C66 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestObjC-TestObjCUITests/Pods-TestObjC-TestObjCUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestObjC-TestObjCUITests/Pods-TestObjC-TestObjCUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestObjC-TestObjCUITests/Pods-TestObjC-TestObjCUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8E8CB61F882C0E8C937D158 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestObjC/Pods-TestObjC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestObjC/Pods-TestObjC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestObjC/Pods-TestObjC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2A98F94F89746F7813CE8FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestObjC-TestObjCUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		540B5E462BDA5623003D98B3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				540B5E552BDA5623003D98B3 /* ViewController.m in Sources */,
+				540B5EAB2BDA7EB2003D98B3 /* Name.m in Sources */,
+				548C66922BDD6AB900119997 /* ProductCollectionViewCell.m in Sources */,
 				540B5E4F2BDA5623003D98B3 /* AppDelegate.m in Sources */,
+				5406A3EA2BDD3A9000EB9A26 /* AccountRepositoryRealm.m in Sources */,
 				540B5E602BDA5625003D98B3 /* main.m in Sources */,
+				549CEAA12BDCB45900056517 /* Tag.m in Sources */,
+				540B5EC52BDB79BC003D98B3 /* AccountManagement.m in Sources */,
+				548C668C2BDD69AC00119997 /* TagViewCollectionViewCell.m in Sources */,
+				5431A13C2BDCE4EB002F4758 /* UserManagementViewController.m in Sources */,
+				548C667D2BDD620200119997 /* PointOfSales.m in Sources */,
+				549CEA9E2BDCB3A300056517 /* Voucher.m in Sources */,
+				5406A3F52BDD5E1C00EB9A26 /* PointOfSalesViewController.m in Sources */,
+				549CEA922BDCA9E800056517 /* Product.m in Sources */,
+				540B5E962BDA5C9C003D98B3 /* Account.m in Sources */,
 				540B5E522BDA5623003D98B3 /* SceneDelegate.m in Sources */,
+				549CEA9B2BDCB31500056517 /* ProductBOGO.m in Sources */,
+				540B5EB32BDA9179003D98B3 /* Email.m in Sources */,
+				540B5EA02BDA7223003D98B3 /* Generator.m in Sources */,
+				5431A1472BDCF921002F4758 /* ItemAccountCollectionViewCell.m in Sources */,
+				549CEA8F2BDCA7A000056517 /* Promotion.m in Sources */,
+				548C669F2BDD78BB00119997 /* ProductService.m in Sources */,
+				540B5EB82BDA9724003D98B3 /* PhoneNumber.m in Sources */,
+				5406A3E72BDD3A3700EB9A26 /* AccountService.m in Sources */,
+				540B5EBE2BDA9E9A003D98B3 /* BirthDate.m in Sources */,
+				549CEAA42BDCC75100056517 /* LineCart.m in Sources */,
+				548C66A52BDD79EE00119997 /* ProductRepository.m in Sources */,
+				540B5E9B2BDA5E64003D98B3 /* AccountID.m in Sources */,
+				548C66982BDD6E0500119997 /* CartCollectionViewCell.m in Sources */,
+				549CEA982BDCB30900056517 /* ProductCombo.m in Sources */,
+				540B5E922BDA5C34003D98B3 /* AggregateRoot.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +897,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				540B5E6A2BDA5625003D98B3 /* TestObjCTests.m in Sources */,
+				540B5EB02BDA82DD003D98B3 /* NameTests.m in Sources */,
+				540B5EC02BDA9EF5003D98B3 /* BirthDateTests.m in Sources */,
+				540B5EBB2BDA97A5003D98B3 /* PhoneNumberTests.m in Sources */,
+				540B5EB52BDA9189003D98B3 /* EmailTests.m in Sources */,
+				540B5E9C2BDA5E64003D98B3 /* AccountID.m in Sources */,
+				540B5EA62BDA740F003D98B3 /* GeneratorTests.m in Sources */,
+				540B5EA12BDA7223003D98B3 /* Generator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,11 +1069,13 @@
 		};
 		540B5E7A2BDA5625003D98B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF78F9780B93BB1B2B3FAC3B /* Pods-TestObjC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TestObjC/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -469,11 +1097,13 @@
 		};
 		540B5E7B2BDA5625003D98B3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11FD64A32A28729B752357FF /* Pods-TestObjC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TestObjC/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -495,6 +1125,7 @@
 		};
 		540B5E7D2BDA5625003D98B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B78A2DC03A2B2E11D84E5149 /* Pods-TestObjCTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -512,6 +1143,7 @@
 		};
 		540B5E7E2BDA5625003D98B3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F73B486D154605949D496F0E /* Pods-TestObjCTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -529,6 +1161,7 @@
 		};
 		540B5E802BDA5625003D98B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E512BC1C3A1EC1B7E196894 /* Pods-TestObjC-TestObjCUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -544,6 +1177,7 @@
 		};
 		540B5E812BDA5625003D98B3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6A4F489DF4974EF1659F253 /* Pods-TestObjC-TestObjCUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

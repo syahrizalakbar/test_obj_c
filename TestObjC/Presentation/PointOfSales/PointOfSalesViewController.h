@@ -6,17 +6,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Tag.h"
-#import "LineCart.h"
+#import "PointOfSales.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PointOfSalesViewController : UIViewController
-
-@property(nonatomic, readonly) NSMutableArray<Tag*> *tags;
-@property(nonatomic, readonly) NSMutableArray<LineCart*> *lineCart;
-
--(NSInteger) grandTotal;
+@interface PointOfSalesViewController : UIViewController {
+    PointOfSales *_pos;
+    __weak IBOutlet UIButton *grandTotal;
+}
 
 @end
 

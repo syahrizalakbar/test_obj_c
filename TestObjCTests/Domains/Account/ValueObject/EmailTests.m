@@ -6,6 +6,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "Email.h"
 
 @interface EmailTests : XCTestCase
 
@@ -13,24 +14,42 @@
 
 @implementation EmailTests
 
-- (void)setUp {
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+
+- (void)testEmailShouldBeInvalid1 {
+    Email *email = [Email alloc];
+    
+    XCTAssertThrows([email initWithValue:@"asds"], @"Email is Invalid");
 }
 
-- (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+- (void)testEmailShouldBeInvalid2 {
+    Email *email = [Email alloc];
+    
+    XCTAssertThrows([email initWithValue:@"asds@"], @"Email is Invalid 2");
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)testEmailShouldBeInvalid3 {
+    Email *email = [Email alloc];
+    
+    XCTAssertThrows([email initWithValue:@"asds@asdss"], @"Email is Invalid 3");
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void)testEmailShouldBeInvalid4 {
+    Email *email = [Email alloc];
+    
+    XCTAssertThrows([email initWithValue:@"asds@asdss."], @"Email is Invalid 4");
 }
+
+- (void)testEmailShouldBeInvalid5 {
+    Email *email = [Email alloc];
+    
+    XCTAssertThrows([email initWithValue:@"s@s.s"], @"Email is Invalid 5");
+}
+
+- (void)testEmailShouldBeValid {
+    Email *email = [Email alloc];
+    
+    XCTAssertNoThrow([email initWithValue:@"sasd@sss.sss"], @"Email is Invalid");
+}
+
 
 @end

@@ -11,7 +11,12 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+    [_masterView.layer setBorderWidth:1];
+    [_masterView.layer setCornerRadius:10];
+}
+
+- (void)setTag:(nonnull NSString *)tag {
+    [_tagName setText:tag];
 }
 
 @end

@@ -6,10 +6,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "IAccountRepository.h"
+#import "IAccountService.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AccountService : NSObject
+@interface AccountService : NSObject<IAccountService> {
+    id<IAccountRepository> _accountRepository;
+}
 
 @end
 

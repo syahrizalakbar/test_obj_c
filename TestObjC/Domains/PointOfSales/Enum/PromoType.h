@@ -4,9 +4,10 @@
 //
 //  Created by Syahrizal Akbar on 27/04/24.
 //
+#import <Foundation/Foundation.h>
 
-#ifndef PromoType_h
-#define PromoType_h
-
-
-#endif /* PromoType_h */
+typedef NS_ENUM(NSInteger, PromoType) {
+    Combo,
+    BOGO,
+    Vc
+};

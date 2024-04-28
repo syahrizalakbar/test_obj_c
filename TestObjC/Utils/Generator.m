@@ -9,4 +9,8 @@
 
 @implementation Generator
 
++(NSString *) generateUUID {
+    return [[NSUUID UUID] UUIDString];
+}
+
 @end

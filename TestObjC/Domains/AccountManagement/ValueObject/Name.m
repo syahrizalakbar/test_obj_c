@@ -14,7 +14,7 @@ static NSInteger _minimumLength = 5;
 - (id)initWithValue:(NSString *)value {
     BOOL lengthIsValid = value.length >= _minimumLength;
     if (!lengthIsValid) {
-        NSString *reason = [NSString stringWithFormat:@"Name less than %ld", (long)_minimumLength];
+        NSString *reason = [NSString stringWithFormat:@"Name should contain atleast %ld characters", (long)_minimumLength];
         @throw [NSException exceptionWithName:@"NameError" reason:reason userInfo:nil];
     }
     

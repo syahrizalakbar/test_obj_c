@@ -6,6 +6,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "BirthDate.h"
 
 @interface BirthDateTests : XCTestCase
 
@@ -13,24 +14,64 @@
 
 @implementation BirthDateTests
 
-- (void)setUp {
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+- (void)testInvalidDateTooOld {
+    BirthDate *birthDate = [BirthDate alloc];
+    
+    NSString *formattedDate;
+    
+    @autoreleasepool {
+        NSDate *dateNow = [NSDate date];
+        NSCalendar *calendar = [NSCalendar currentCalendar];
+        NSDateComponents *dateComponents = [[NSDateComponents alloc] init];
+        [dateComponents setYear:[BirthDate maximumYearsOld]*-1];
+        
+        NSDate *invalidDate = [calendar dateByAddingComponents:dateComponents toDate:dateNow options:0];
+        
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:[BirthDate dateFormat]];
+        
+        formattedDate = [dateFormatter stringFromDate:invalidDate];
+    }
+    
+    XCTAssertThrows([birthDate initWithValue:formattedDate], @"BirthDate is nonsense too old");
 }
 
-- (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+- (void)testInvalidDateTooYoung {
+    BirthDate *birthDate = [BirthDate alloc];
+    
+    NSString *formattedDate;
+    
+    @autoreleasepool {
+        NSDate *dateNow = [NSDate date];
+        NSCalendar *calendar = [NSCalendar currentCalendar];
+        NSDateComponents *dateComponents = [[NSDateComponents alloc] init];
+        [dateComponents setYear:([BirthDate minimumYearsOld]-1)*-1];
+        
+        // Set invalid years
+        NSDate *invalidDate = [calendar dateByAddingComponents:dateComponents toDate:dateNow options:0];
+        
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:[BirthDate dateFormat]];
+        
+        formattedDate = [dateFormatter stringFromDate:invalidDate];
+    }
+    
+    
+    XCTAssertThrows([birthDate initWithValue:formattedDate], @"BirthDate is nonsense too young");
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)testInvalidDateNotCorrectDate {
+    BirthDate *birthDate = [BirthDate alloc];
+    
+    
+    XCTAssertThrows([birthDate initWithValue:@"32-02-2000"], @"BirthDate is nonsense too old");
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void)testValidDate {
+    BirthDate *birthDate = [BirthDate alloc];
+    
+    
+    XCTAssertNoThrow([birthDate initWithValue:@"22-12-2000"], @"BirthDate is valid");
 }
 
 @end
